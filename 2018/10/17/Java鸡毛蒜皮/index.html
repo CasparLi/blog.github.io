@@ -7,18 +7,18 @@
   
   <title>Java鸡毛蒜皮 | Caspar&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="把数组封装到Set集合现有两个数组如下,需要分别将其中的元素封装到一个Set中.  String[] stringArray = new String[]{“1”,”2”,”3”,”4”,”5”,”6”,”7”};int[] intArray = new int[]{1, 2, 3, 4, 5, 6, 7};    对于stringArray, 可使用如下方法: 1234Set&amp;lt;String">
+  <meta name="description" content="把数组封装到Set集合现有两个数组如下,需要分别将其中的元素封装到一个Set中.12String[] stringArray = new String[]&amp;#123;&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;&amp;#125;;  int[] intArray = new int[]&amp;#123;1, 2, 3, 4, 5, 6, 7&amp;#125;; 对于stringArray, 可使用如下方法">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java鸡毛蒜皮">
 <meta property="og:url" content="http://yoursite.com/2018/10/17/Java鸡毛蒜皮/index.html">
 <meta property="og:site_name" content="Caspar&#39;s blog">
-<meta property="og:description" content="把数组封装到Set集合现有两个数组如下,需要分别将其中的元素封装到一个Set中.  String[] stringArray = new String[]{“1”,”2”,”3”,”4”,”5”,”6”,”7”};int[] intArray = new int[]{1, 2, 3, 4, 5, 6, 7};    对于stringArray, 可使用如下方法: 1234Set&amp;lt;String">
+<meta property="og:description" content="把数组封装到Set集合现有两个数组如下,需要分别将其中的元素封装到一个Set中.12String[] stringArray = new String[]&amp;#123;&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;&amp;#125;;  int[] intArray = new int[]&amp;#123;1, 2, 3, 4, 5, 6, 7&amp;#125;; 对于stringArray, 可使用如下方法">
 <meta property="og:locale" content="Chinese">
-<meta property="og:updated_time" content="2018-10-17T03:34:00.914Z">
+<meta property="og:updated_time" content="2018-10-17T09:44:27.137Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java鸡毛蒜皮">
-<meta name="twitter:description" content="把数组封装到Set集合现有两个数组如下,需要分别将其中的元素封装到一个Set中.  String[] stringArray = new String[]{“1”,”2”,”3”,”4”,”5”,”6”,”7”};int[] intArray = new int[]{1, 2, 3, 4, 5, 6, 7};    对于stringArray, 可使用如下方法: 1234Set&amp;lt;String">
+<meta name="twitter:description" content="把数组封装到Set集合现有两个数组如下,需要分别将其中的元素封装到一个Set中.12String[] stringArray = new String[]&amp;#123;&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;&amp;#125;;  int[] intArray = new int[]&amp;#123;1, 2, 3, 4, 5, 6, 7&amp;#125;; 对于stringArray, 可使用如下方法">
   
     <link rel="alternate" href="/atom.xml" title="Caspar&#39;s blog" type="application/atom+xml">
   
@@ -91,10 +91,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="把数组封装到Set集合"><a href="#把数组封装到Set集合" class="headerlink" title="把数组封装到Set集合"></a>把数组封装到Set集合</h1><p>现有两个数组如下,需要分别将其中的元素封装到一个Set中.</p>
-<blockquote>
-<p>String[] stringArray = new String[]{“1”,”2”,”3”,”4”,”5”,”6”,”7”};<br>int[] intArray = new int[]{1, 2, 3, 4, 5, 6, 7};  </p>
-</blockquote>
+        <h1 id="把数组封装到Set集合"><a href="#把数组封装到Set集合" class="headerlink" title="把数组封装到Set集合"></a>把数组封装到Set集合</h1><p>现有两个数组如下,需要分别将其中的元素封装到一个Set中.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String[] stringArray = <span class="keyword">new</span> String[]&#123;<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>&#125;;  </span><br><span class="line"><span class="keyword">int</span>[] intArray = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>&#125;;</span><br></pre></td></tr></table></figure></p>
 <p>对于stringArray, 可使用如下方法:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Set&lt;String&gt; stringSet = <span class="keyword">new</span> HashSet&lt;&gt;(Arrays.asList(stringArray));</span><br><span class="line"><span class="comment">//或者</span></span><br><span class="line">Set&lt;T&gt; stringSet = <span class="keyword">new</span> HashSet&lt;T&gt;();</span><br><span class="line">Collections.addAll(stringSet, stringArray);</span><br></pre></td></tr></table></figure>
 <p>但对于intArray这种基本类型数组, 因为存在类型转换问题, 上面的方法会失效. 转出来的结果就是一个Set&lt;int[]&gt;集合.<br>为了正确的处理基本类型数组, 在JDK1.8以前需要写一个循环来处理.</p>
@@ -102,7 +99,7 @@
 <p>在JDK1.8, 引入了流处理. 代码就变成了这样:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Set&lt;String&gt; stringSet = Arrays.stream(stringArray).collect(Collectors.toSet());</span><br><span class="line">Set&lt;Integer&gt; intSet = Arrays.stream(intArray).boxed().collect(Collectors.toSet());</span><br></pre></td></tr></table></figure>
 <p><em>注意</em> 在处理intArray时, 调用了boxed方法来包装基本类型的元素.</p>
-<h1 id="byte数组转换成16进制字符串"><a href="#byte数组转换成16进制字符串" class="headerlink" title="byte数组转换成16进制字符串"></a>byte数组转换成16进制字符串</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">byte</span>[] bytes = &#123;-<span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> &#125;;</span><br><span class="line">StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">byte</span> b : bytes) &#123;</span><br><span class="line">    sb.append(String.format(<span class="string">"%02X "</span>, b));</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(sb.toString());</span><br><span class="line"><span class="comment">// prints "FF 00 01 02 03 "</span></span><br></pre></td></tr></table></figure>
+<h1 id="byte数组转换成16进制字符串"><a href="#byte数组转换成16进制字符串" class="headerlink" title="byte数组转换成16进制字符串"></a>byte数组转换成16进制字符串</h1><h2 id="使用-java-util-Formatter-可能效率低"><a href="#使用-java-util-Formatter-可能效率低" class="headerlink" title="使用 java.util.Formatter 可能效率低"></a>使用 java.util.Formatter 可能效率低</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">byte</span>[] bytes = &#123;-<span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> &#125;;</span><br><span class="line">StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">byte</span> b : bytes) &#123;</span><br><span class="line">    sb.append(String.format(<span class="string">"%02X "</span>, b));</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(sb.toString());</span><br><span class="line"><span class="comment">// prints "FF 00 01 02 03 "</span></span><br></pre></td></tr></table></figure>
 <p>java.util.Formatter <a href="https://docs.oracle.com/javase/6/docs/api/java/util/Formatter.html#syntax" target="_blank" rel="noopener">语法</a></p>
 <ul>
 <li>%[flags][width]conversion<ul>
@@ -112,6 +109,7 @@
 </ul>
 </li>
 </ul>
+<h2 id="使用-javax-xml-bind-DatatypeConverter"><a href="#使用-javax-xml-bind-DatatypeConverter" class="headerlink" title="使用 javax.xml.bind.DatatypeConverter"></a>使用 javax.xml.bind.DatatypeConverter</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> javax.xml.bind.DatatypeConverter;</span><br><span class="line"></span><br><span class="line"><span class="keyword">byte</span>[] bytes = &#123;-<span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> &#125;;</span><br><span class="line">System.out.println(DatatypeConverter.printHexBinary(bytes));</span><br><span class="line"><span class="comment">// prints "FF00010203"</span></span><br></pre></td></tr></table></figure>
 <p>参考:  </p>
 <ul>
 <li><a href="https://stackoverflow.com/questions/2817752/java-code-to-convert-byte-to-hexadecimal" target="_blank" rel="noopener">Java code To convert byte to Hexadecimal</a>  </li>
@@ -154,11 +152,43 @@
 <p>onem ：与“indi”相同，推荐使用“indi”。</p>
 <p>team ：团队项目，指由团队发起，并由该团队开发的项目，copyright属于该团队所有。<br>包名为“team.团队名.项目名.模块名.……”。</p>
 <p>com ：公司项目，copyright由项目发起的公司所有。包名为“com.公司名.项目名.模块名.……”。</p>
+<h1 id="MessageFormat用法"><a href="#MessageFormat用法" class="headerlink" title="MessageFormat用法"></a>MessageFormat用法</h1><p>在使用MessageFormat时, 如果直接传入一个大数字, 默认输出会产生逗号分隔.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.text.MessageFormat;</span><br><span class="line">MessageFormat.format(<span class="string">"big number:&#123;0&#125;"</span>, System.currentTimeMillis());</span><br><span class="line"><span class="comment">// prints "big number:1,539,768,514,811"</span></span><br></pre></td></tr></table></figure></p>
+<p>这往往会带来混乱. 需要指定 MessageFormat 的 pattern<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.text.MessageFormat;</span><br><span class="line">MessageFormat.format(<span class="string">"big number:&#123;0,number,#&#125;"</span>, System.currentTimeMillis());</span><br><span class="line"><span class="comment">// prints "big number:1539768514811"</span></span><br></pre></td></tr></table></figure></p>
+<p>其中 MessageFormat pattern:<br>MessageFormat uses patterns of the following form:</p>
+<ul>
+<li>MessageFormatPattern:<ul>
+<li>String</li>
+<li>MessageFormatPattern FormatElement String</li>
+</ul>
+</li>
+<li>FormatElement:<ul>
+<li>{ ArgumentIndex }</li>
+<li>{ ArgumentIndex , FormatType }</li>
+<li>{ ArgumentIndex , FormatType , FormatStyle }</li>
+</ul>
+</li>
+<li>FormatType: one of <ul>
+<li>number date time choice</li>
+</ul>
+</li>
+<li>FormatStyle:<ul>
+<li>short</li>
+<li>medium</li>
+<li>long</li>
+<li>full</li>
+<li>integer</li>
+<li>currency</li>
+<li>percent</li>
+<li>SubformatPattern</li>
+</ul>
+</li>
+</ul>
+<p>详情见 <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html" target="_blank" rel="noopener">Class MessageFormat</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/17/Java鸡毛蒜皮/" data-id="cjncllfca0001x4rsyslblc6j" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/17/Java鸡毛蒜皮/" data-id="cjncvan100001ggrs5v67043y" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
